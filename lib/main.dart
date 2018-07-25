@@ -89,6 +89,12 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            new Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.red)
+              ),
+              child: new Text("My Awesome Border"),
+            ),
             new Text(
               'You have pushed the button this many times:',
             ),
