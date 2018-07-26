@@ -56,6 +56,20 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  var container = new Container( // grey box
+    child: new Text(
+      "Lorem ipsum",
+      style: new TextStyle(
+        fontSize: 24.0,
+        fontWeight: FontWeight.w900,
+        fontFamily: "Georgia",
+      ),
+    ),
+    width: 320.0,
+    height: 240.0,
+    color: Colors.grey[300],
+  );
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -89,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            container,
             new Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.red)
